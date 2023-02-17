@@ -1,0 +1,75 @@
+//* VARIABLES
+
+$color-fondo: black;
+$color-secundario: white;
+$color-terciario: gray;
+
+//* LISTAS
+
+$font-size: 45px,
+    30px,
+    28px,
+    20px,
+    16px;
+
+//* EXTENDS
+
+%flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hero div {
+    @extend %flex;
+}
+
+.titulo-galeria {
+    @extend %flex;
+}
+
+.titulo-productos {
+    @extend %flex;
+}
+
+.ofertas h2 {
+    @extend %flex;
+}
+
+.iniciar-sesion {
+    @extend %flex;
+}
+
+.iniciar-sesion div {
+    @extend %flex;
+}
+
+.iniciar-sesion a {
+    @extend %flex;
+}
+
+.encabezado {
+    @extend %flex;
+}
+
+.pie {
+    @extend %flex;
+}
+
+//* MIXINS
+
+@mixin flex ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.contenedor-galeria{
+    @include flex (flex, space-around, center);
+}
+
+.productos{
+    @include flex (flex, space-around, center);
+}

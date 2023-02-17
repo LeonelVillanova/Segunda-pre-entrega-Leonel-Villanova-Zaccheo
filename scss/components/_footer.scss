@@ -1,0 +1,20 @@
+.pie{
+    font-size: nth($font-size, 4);
+    background-color: $color-fondo;
+    grid-area: footer;
+
+    h2{
+        margin-bottom: 13px;
+
+    }
+
+    img{
+        width: 65px;
+        height: 65px;
+        border-radius: 100%;
+        transition: 1s;
+        &:hover{
+            transform: scale(1.3);
+        }
+    }
+}

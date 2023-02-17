@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Bebas Neue', cursive;
+  color: white; }
+
+.grid-contenedor {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 72px 60px auto 140px;
+  grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer"; }
+
+.hero div, .titulo-galeria, .titulo-productos, .ofertas h2, .iniciar-sesion, .iniciar-sesion div, .iniciar-sesion a, .encabezado, .pie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.contenedor-galeria {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.productos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.encabezado {
+  background-color: black;
+  grid-area: header;
+  color: white; }
+  .encabezado h1 {
+    background: #020024;
+    background: linear-gradient(90deg, #020024 0%, #8e8d95 51%, #0b0b0b 100%, #909090 100%);
+    transition-property: width;
+    transition-duration: 4s;
+    transition-timing-function: ease-in;
+    margin: 0 auto;
+    width: 170px;
+    max-height: 100px;
+    background-color: black;
+    border: 8px;
+    text-align: center;
+    padding: 8px; }
+    .encabezado h1:hover {
+      width: 100%; }
+
+.navega {
+  background-color: black;
+  grid-area: nav;
+  position: sticky;
+  top: 0; }
+
+.principal {
+  background-color: black;
+  grid-area: main; }
+  .principal .hero {
+    background-image: url("../img/remeramujerr.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 750px; }
+    .principal .hero div {
+      color: white;
+      width: 100%;
+      height: 100%; }
+      .principal .hero div h2 {
+        font-size: 45px;
+        margin-bottom: 10px; }
+      .principal .hero div p {
+        font-size: 30px;
+        margin-bottom: 16px; }
+      .principal .hero div a {
+        font-size: 28px;
+        background-color: black;
+        text-decoration: none;
+        color: white;
+        border: 3px solid white;
+        padding: 11px; }
+
+.titulo-galeria {
+  font-size: 28px;
+  background-color: black;
+  height: 300px;
+  color: white; }
+  .titulo-galeria h2 {
+    border: 3px solid white;
+    padding: 17px; }
+
+.galeria .contenedor-galeria {
+  background-color: black;
+  height: 600px; }
+  .galeria .contenedor-galeria div img {
+    border: 3px solid gray;
+    margin: 30px;
+    width: 450;
+    height: 450px;
+    box-shadow: 3px 3px 25px 17px rgba(100, 100, 100, 0.74);
+    -webkit-box-shadow: 3px 3px 25px 17px rgba(100, 100, 100, 0.74);
+    -moz-box-shadow: 3px 3px 25px 17px rgba(100, 100, 100, 0.74);
+    transition: 2s; }
+    .galeria .contenedor-galeria div img:hover {
+      transform: scale(1.1); }
+
+.titulo-productos {
+  font-size: 28px;
+  background-color: black;
+  height: 300px;
+  color: white; }
+  .titulo-productos h2 {
+    border: 3px solid white;
+    padding: 17px; }
+
+.productos {
+  background-image: url("../img/fondocerca.jpg");
+  background-position: unset;
+  background-size: cover;
+  height: 700px; }
+  .productos div {
+    font-size: 16px;
+    border: 4px solid gray;
+    background-color: black;
+    width: 259px;
+    height: 350px;
+    margin: 30px;
+    text-align: center;
+    box-shadow: 3px 3px 25px 17px rgba(100, 100, 100, 0.74);
+    -webkit-box-shadow: 3px 3px 25px 17px rgba(100, 100, 100, 0.74);
+    -moz-box-shadow: 3px 3px 25px 17px rgba(100, 100, 100, 0.74);
+    transition: 2s; }
+    .productos div:hover {
+      transform: scale(1.1); }
+    .productos div img {
+      width: 250;
+      height: 250px;
+      margin-bottom: 14px; }
+    .productos div p {
+      margin-bottom: 18px; }
+    .productos div a {
+      text-decoration: none;
+      color: white; }
+
+.ofertas {
+  background-color: black;
+  height: auto; }
+  .ofertas h2 {
+    margin-top: 5px;
+    padding: 5px;
+    color: white; }
+
+.carrusel {
+  background-color: black; }
+  .carrusel div img {
+    width: 100%;
+    height: 550px; }
+
+.iniciar-sesion {
+  font-size: 45px;
+  background-image: url("../img/fondocerca.jpg");
+  background-position: unset;
+  background-size: cover;
+  height: 700px; }
+  .iniciar-sesion div {
+    font-size: 20px;
+    margin-bottom: 20px; }
+  .iniciar-sesion a {
+    font-size: 30px;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    border: 3px solid white;
+    padding: 11px; }
+
+.pie {
+  font-size: 20px;
+  background-color: black;
+  grid-area: footer; }
+  .pie h2 {
+    margin-bottom: 13px; }
+  .pie img {
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+    transition: 1s; }
+    .pie img:hover {
+      transform: scale(1.3); }
+
+@media screen and (max-width: 1050px) {
+  .grid-contenedor {
+    width: 100%;
+    margin: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 40px auto 120px;
+    grid-template-areas: "header header" "nav nav" "main main" "footer footer"; }
+  .galeria .contenedor-galeria {
+    flex-direction: column-reverse;
+    height: 1600px; }
+  .productos {
+    flex-direction: column;
+    height: 1500px; } }
+
+@media screen and (max-width: 650px) {
+  .grid-contenedor {
+    margin: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 60px auto 100px;
+    grid-template-areas: "header" "nav" "main" "footer"; }
+  .hero div {
+    flex-direction: column;
+    text-align: center; }
+  .navegacion ul {
+    flex-direction: column;
+    text-align: center; }
+  .galeria div {
+    flex-direction: column;
+    height: 1800px; }
+  .productos {
+    flex-direction: column;
+    height: 1800px; }
+  .iniciar-sesion {
+    flex-direction: column;
+    height: 1800px;
+    text-align: center; }
+  .pie {
+    flex-direction: column;
+    text-align: center;
+    height: 185px; } }

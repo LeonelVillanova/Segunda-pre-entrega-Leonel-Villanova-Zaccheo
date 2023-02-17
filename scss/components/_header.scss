@@ -1,0 +1,30 @@
+.encabezado{
+    background-color: $color-fondo;
+    grid-area: header;
+    color: $color-secundario;
+
+    h1{
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(142,141,149,1) 51%, rgba(11,11,11,1) 100%, rgba(144,144,144,1) 100%);
+        transition-property: width;
+        transition-duration: 4s;
+        transition-timing-function: ease-in;
+        margin: 0 auto;
+        width: 170px;
+        max-height: 100px;
+        background-color: black;
+        border: 8px;
+        text-align: center;
+        padding: 8px;
+        &:hover{
+            width: 100%;
+        }
+    }
+}
+
+.navega{
+    background-color: $color-fondo;
+    grid-area: nav;
+    position: sticky;
+    top: 0;
+}
