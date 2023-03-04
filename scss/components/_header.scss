@@ -1,3 +1,8 @@
+.cabeza{
+    grid-area: header;
+}
+
+
 .encabezado{
     background-color: $color-fondo;
     grid-area: header;
@@ -22,9 +27,9 @@
     }
 }
 
-.navega{
+.cabeza{
     background-color: $color-fondo;
-    grid-area: nav;
+    grid-area: header;
     position: sticky;
     top: 0;
 }

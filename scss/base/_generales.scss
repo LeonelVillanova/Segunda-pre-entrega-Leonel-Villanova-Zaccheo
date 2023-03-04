@@ -17,7 +17,7 @@ body{
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 72px 60px auto 140px;
+    grid-template-rows: 50px 60px auto 140px;
     grid-template-areas:
     "header header header"
     "nav nav nav"
